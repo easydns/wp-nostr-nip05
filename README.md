@@ -1,5 +1,7 @@
 # easyNostr NIP-05 Identity Server Plugin for WordPress
 
+![easyNostr](https://easynostr.com/images/easynostr_mandala.png)
+
 This is a beta proof-of-concept for a plugin that turns your WordPress installation into a NIP-05 identity server for Nostr (Notes and Other Stuff Transmitted by Relays).
 
 ## Description
