@@ -93,5 +93,4 @@ There are also specific easyNostr points of contact:
 
 If you find this plugin useful, please consider donating to support its development: 
 - via BTC: bc1qdkaymqtvpus5prx6lsfx4483kvv95mjah2z2wc
-- Lightning: LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHK6CTWD93KXMMDD4SNGWQP2498293KXMMDD4SNGWQP24982# wp-nostr-nip05
-Plugin to turn your Wordpress into a Nostr NIP-05 Identity Server
+- Lightning: LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHK6CTWD93KXMMDD4SNGWQP2498293KXMMDD4SNGWQP24982
