@@ -17,10 +17,11 @@ For Plesk servers you may have to log in to your webserver settings and add it t
 
 ## Installation
 
-1. Upload the plugin files to the `/wp-content/plugins/nostr` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the **Plugins** screen in WordPress.
-3. Visit the user profile pages and enter the pubkey in under the **Nostr NIP-05 Identity** section
-4. Make sure that your web server is enabled for Cross-Origin Resource Sharing (CORS). You can use a utility like https://cors-test.codehappy.dev/ to check. 
+1. You can pull the .zip file from here or compress them yourself
+2. Upload the plugin files to the `/wp-content/plugins/nostr` directory, or install the plugin through the WordPress plugins screen directly.
+3. Activate the plugin through the **Plugins** screen in WordPress.
+4. Visit the user profile pages and enter the pubkey in under the **Nostr NIP-05 Identity** section
+5. Make sure that your web server is enabled for Cross-Origin Resource Sharing (CORS). You can use a utility like https://cors-test.codehappy.dev/ to check. 
 
 ## Frequently Asked Questions
 
