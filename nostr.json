@@ -1,0 +1,20 @@
+<?php require_once( '../wp-load.php' );
+global $wpdb; 
+$nostruser    = $wpdb->prefix.'users';
+$name=sanitize_text_field($_GET['name']);
+$result = $wpdb->get_results( "SELECT * FROM   $nostruser where user_login = '$name'");
+ foreach($result as $row) {
+	if($row) {
+              $hexkey = get_user_meta( $row->ID, 'hexkey', true );
+                if(!empty($hexkey)){
+		        $JSON_RESPONSE = Array (
+                "names" => array(
+                $row->user_login => $hexkey 
+                ));
+                }
+	}     
+}
+echo $data = json_encode($JSON_RESPONSE);
+?>
+ 
+     
