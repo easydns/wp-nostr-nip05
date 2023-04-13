@@ -1,4 +1,19 @@
 <?php
+
+##
+# WP-Nostr-NIP05 released under GPLv2 License
+#
+# Copyright (c) 2023 EasyDNS Technologies Inc 
+#                    https://easydns.com
+#
+# Devs: Tejinder Singh
+#       Mark E. Jeftovic
+#
+# Project: easyNostr      https://easyNostr.com
+#
+# Github: https://github.com/easydns/wp-nostr-nip05
+##
+
 add_action( 'show_user_profile', 'rudr_profile_fields' );
 add_action( 'edit_user_profile', 'rudr_profile_fields' );
 
