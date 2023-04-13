@@ -1,10 +1,11 @@
 <?php
 /*
-   Plugin Name: easyNostr Nip-05 Endpoint
+   Plugin Name: WP-Nostr-Nip05
    Description: Use your WordPress site as a Nostr NIP-05 Identity Server
-   Version: 1.0.0
-   Author: easyPress
+   Version: 1.0.1
+   Author: easyDNS Technologies Inc.
 */
+
 // Add menu
 function nostr_menu() {
     add_menu_page("easyNostr", "easyNostr","manage_options", "nostr-settings", "nostrsettings",'dashicons-rest-api'); 
