@@ -1,8 +1,23 @@
 <?php
-add_action( 'show_user_profile', 'rudr_profile_fields' );
-add_action( 'edit_user_profile', 'rudr_profile_fields' );
 
-function rudr_profile_fields( $user ) {
+##
+# WP-Nostr-NIP05 released under GPLv2 License
+#
+# Copyright (c) 2023 EasyDNS Technologies Inc 
+#                    https://easydns.com
+#
+# Devs: Tejinder Singh
+#       Mark E. Jeftovic
+#
+# Project: easyNostr      https://easyNostr.com
+#
+# Github: https://github.com/easydns/wp-nostr-nip05
+##
+
+add_action( 'show_user_profile', 'enip05_profile_fields' );
+add_action( 'edit_user_profile', 'enip05_profile_fields' );
+
+function enip05_profile_fields( $user ) {
 
 	// let's get custom field values
 	$hexkey = get_user_meta( $user->ID, 'hexkey', true );
@@ -35,10 +50,10 @@ function rudr_profile_fields( $user ) {
 }
 
 
-add_action( 'personal_options_update', 'rudr_save_profile_fields' );
-add_action( 'edit_user_profile_update', 'rudr_save_profile_fields' );
+add_action( 'personal_options_update', 'enip05_save_profile_fields' );
+add_action( 'edit_user_profile_update', 'enip05_save_profile_fields' );
  
-function rudr_save_profile_fields( $user_id ) {
+function enip05_save_profile_fields( $user_id ) {
 	
 	if( ! isset( $_POST[ '_wpnonce' ] ) || ! wp_verify_nonce( $_POST[ '_wpnonce' ], 'update-user_' . $user_id ) ) {
 		return;

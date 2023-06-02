@@ -1,0 +1,12 @@
+#
+# Added by easyNostr NIP-05 Plugin
+# Creates Nostr NIP-05 identity endpoint 
+# See https://easyNostr.com for details
+#
+<IfModule mime_module>
+	AddHandler application/x-httpd-ea-php81 .php .php8 .phtml .json
+</IfModule>
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "*"
+	Header set Access-Control-Allow-Methods "GET"
+</IfModule> 
